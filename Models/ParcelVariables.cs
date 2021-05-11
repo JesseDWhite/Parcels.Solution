@@ -9,19 +9,20 @@ namespace Parcels.Models
     public int Width { get; set; }
     public int Height { get; set; }
     public int Weight { get; set; }
-
+    public int FinalPrice { get; set; }
     public Parcel(int length, int width, int height, int weight)
     {
       Length = length;
       Width = width;
       Height = height;
       Weight = weight;
+      FinalPrice = 0;
     }
-    public static int GetPrice(int length, int width, int height, int weight)
+    public void GetPrice(int length, int width, int height, int weight)
     {
       int volume = length * width * height;
       int price = weight * volume;
-      return price;
+      this.FinalPrice = price;
     }
   }
 }
