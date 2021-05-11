@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Package Cost Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Package Cost Calculator</h1>
+    <div>
+      <form action="/parcels/parcelresult" method="post">
+        <div class="form-group">
+          <label for="length">Length</label>
+          <input type="text" name="length" id="length" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="width">Width</label>
+          <input type="text" name="width" id="width" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="height">Height</label>
+          <input type="text" name="height" id="height" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="weight">Weight</label>
+          <input type="text" name="weight" id="weight" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-sucess">Find My Price</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
